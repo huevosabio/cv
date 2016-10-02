@@ -6,4 +6,4 @@ deployment:
   prod:
     branch: master
     commands:
-      - aws s3 sync cv.pdf s3://cv.ramondario.com/ --delete
+      - aws s3 sync . s3://cv.ramondario.com/ --delete
