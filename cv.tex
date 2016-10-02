@@ -14,6 +14,7 @@
 \usepackage[cm]{fullpage}
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
+\usepackage[margin=0.5in]{geometry}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
@@ -79,6 +80,24 @@
 \centering{650.669.7306 | \href{mailto:rdit@stanford.edu}{rdit@stanford.edu}}
 
 
+%Section: Education
+\section{Education}
+
+\begin{tabularx}{\textwidth}{Xr}	
+ \textsc{Stanford University} & \textsc{01/2016-Present}\\ 
+\emph{Ph.D. in Civil Engineering} &\\
+\multicolumn{2}{>{\hsize=\dimexpr2\hsize+2\tabcolsep+\arrayrulewidth\relax}X}{\footnotesize{Focus: Optimal Control of Autonomous Fleets.}}\\
+\multicolumn{2}{c}{} \\
+
+ \textsc{Stanford University} & \textsc{09/2012-06/2014} \\ 
+\emph{M.S. in Civil Engineering} &
+\\\multicolumn{2}{>{\hsize=\dimexpr2\hsize+2\tabcolsep+\arrayrulewidth\relax}X}{\footnotesize{Focus: Construction Data Analysis and Optimization.}}
+\\\multicolumn{2}{c}{} \\
+
+\textsc{The University of Texas at Austin} & \textsc{08/2007-06/2012}\\
+\emph{B.S. in Civil Engineering} &\\
+%\multicolumn{2}{c}{} \\
+\end{tabularx}
 
 %Section: Work Experience at the top
 \section{Experience}
@@ -88,7 +107,8 @@
 \emph{Financial Software Engineer} &\\
 \multicolumn{2}{>{\hsize=\dimexpr2\hsize+2\tabcolsep+\arrayrulewidth\relax}X}{\footnotesize{Reduced cost of the residential pricing engine by 80\% and the response time by 90\% by building and migrating to a new pricing engine built in Python and deployed in Amazon Web Services.
 
-Enabled non-programming analysts to run complex financial analyses, and automated the process of cleaning, storing and visualizing existing lease information by building an internal web application using the existing financial code base, writing cleaning scripts and a task/queue system.}}\\
+Enabled non-programming analysts to run complex financial analyses, and automated the process of cleaning, storing and visualizing existing lease information by building an internal web application using the existing financial code base, writing cleaning scripts and a task/queue system.
+}}\\
 \multicolumn{2}{X}{} \\
 
 \textsc{Stanford University}, Stanford, CA & \textsc{07/2014-12/2014}\\
@@ -112,53 +132,22 @@ Automatically generated crane path schedules for wind farm erection by developin
 
 \end{tabularx}
 
-
-
-
-%Section: Education
-\section{Education}
-
-\begin{tabularx}{\textwidth}{Xr}	
- \textsc{Stanford University} & \textsc{01/2016-Present}\\ 
-\emph{Ph.D. in Civil Engineering} &\\
-\multicolumn{2}{>{\hsize=\dimexpr2\hsize+2\tabcolsep+\arrayrulewidth\relax}X}{\footnotesize{Focus: Optimal Control of Autonomous Fleets.}}\\
-\multicolumn{2}{c}{} \\
-
- \textsc{Stanford University} & \textsc{09/2012-06/2014} \\ 
-\emph{M.S. in Civil Engineering} &
-\\\multicolumn{2}{>{\hsize=\dimexpr2\hsize+2\tabcolsep+\arrayrulewidth\relax}X}{\footnotesize{Focus: Construction Data Analysis and Optimization.}}
-\\\multicolumn{2}{c}{} \\
-
-\textsc{The University of Texas at Austin} & \textsc{08/2007-06/2012}\\
-\emph{B.S. in Civil Engineering} &\\
-\multicolumn{2}{>{\hsize=\dimexpr2\hsize+2\tabcolsep+\arrayrulewidth\relax}X}{\footnotesize{Focus: Risk Analysis, Design Optimization, Building Information Modeling.} } \\
-%\multicolumn{2}{c}{} \\
-\end{tabularx}
-
-
-
-
-
-
-
-
-
-
-
-
-
 %Section: Research
 \section{Research Experience}
 \begin{tabularx}{\textwidth}{Xr}
 
  \textsc{Stanford University}& \textsc{1/2016-Present}\\
  \emph{Control of Autonomous Mobility-on-Demand Systems} &\\
- \multicolumn{2}{>{\hsize=\dimexpr2\hsize+2\tabcolsep+\arrayrulewidth\relax}X}{\footnotesize{Developed an asymptotically optimal algorithm for the routing and repositioning of autonomous taxis by modeling the operation as a queueing network. Validated the }}\\
+ \multicolumn{2}{>{\hsize=\dimexpr2\hsize+2\tabcolsep+\arrayrulewidth\relax}X}{\footnotesize{
+ Modeled the operation of an autonomous taxi fleet as a queueing network and developed an asymptotically optimal algorithm for routing and rebalancing the vehicles. Validated this approach by testing it on a model of Manhattan using the NYC Taxi dataset. Results will be presented at the 2017 International Workshop on the Algorithmic Foundations of Robotics.
+ }}\\
  \multicolumn{2}{c}{} \\
 
 \textsc{Stanford University} & \textsc{10/2013-05/2014}\\
 \emph{Wind Farm Layout Optimization} &
-\\\multicolumn{2}{>{\hsize=\dimexpr2\hsize+2\tabcolsep+\arrayrulewidth\relax}X}{\footnotesize{Design and Optimization of turbine layouts.}}
+\\\multicolumn{2}{>{\hsize=\dimexpr2\hsize+2\tabcolsep+\arrayrulewidth\relax}X}{\footnotesize{
+	Reduced by 5\% the cost of a 250 MW wind farm by parametrically modeling the construction costs and optimizing the turbine layout.
+}}
 \\
 %\multicolumn{2}{c}{} \\
 
@@ -213,6 +202,7 @@ Automatically generated crane path schedules for wind farm erection by developin
 %TODO: 
 % rebuild groupstats, serve it in your server, add to resume
 % improve the research experience to the style in experience
-% move this to sublime/github
+% build in circleci, push to cv.ramondario.com
+% 
 
 \end{document}
